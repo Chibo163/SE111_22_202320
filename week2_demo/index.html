@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+
+    <!--IN-DOCUMENT STYLING-->
+    <style>
+        /*in here we write CSS*/
+        /*SELECTING in CSS and Javascript: select specific elements(s) on a page
+            *by ELEMENT TYPE            ex: body, div, p
+            *by ID ATTRIBUTE VALUE      ex: #wrapper, #nav, #footer
+            *by CLASS ATTRIBUTE VALUE   ex: coming in week 3
+        
+        */
+
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element*/
+            margin:5px; /*adds space between element and others*/
+        }
+
+        #nav, #footer {
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body style="background-color: grey">
+    <div id="wrapper"><!--This is the wrapper, and it wraps around all content-->
+
+        <!--HEADER-->
+        <h1>Josh Infantino</h1>
+
+        <!--NAV-->
+        <div id="nav">
+
+            <!--EXTERNAL LINK: a link to a page outside of our website-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a>
+
+            <!--INTERNAL LINK: a link to a page inside of your website root folder-->
+            <!--RELATIVE PATH-->
+            <a href="page2.html" target="_blank">Page 2</a>
+
+            <!--IN PAGE JUMP LINK: a link to another section within the current page-->
+            <a href="#bio">BIO</a>
+            <a href="#school">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/#nav-->
+
+        <!--BIO-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+            <!--REMOTE image links (absolute paths) DON'T USE THESE!!-->
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lord-of-the-rings-sean-bean-boromir-1584636601.jpg" alt="Boromir Lord of the Rings" style="width:500px" title="One cannot simply walk into Mordor">
+
+            <!--RELATIVE image link (relative path) resource must be stored in the root folder-->
+            <img src="images/stormsEnd.jpg" alt="Strom's End castle" style="width:500px">
+
+        </div><!--/#bio-->
+        
+        <!--SCHOOLS-->
+        <div id="schools">
+
+            <h2>Schools</h2>
+
+            <ol>
+                <li>New England Institute of Technology</li>
+                <li>Abeka Academy - Middle/High School</li>
+                <li>George J. Peters Elementry School</li>
+            </ol>
+
+            <img src="images/meca.jpg" alt="MECA Porteous Building at dusk" style="width:500px">
+
+        </div><!--/#schools-->
+
+        <hr>
+        
+        <!--HOBBIES-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div><!--/#hobbies-->
+
+        <!--FOOTER-->
+        <div id="footer">
+
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; JInfantino | SE111 | Winter 2023</p>
+            <br>
+            <!--VALIDATION SCREENSHOT-->
+            <img src="images/indexvalidation.png" alt="validation of page" style="width:100%">
+
+        </div><!--/#Footer-->
+
+    </div>
+</body>
+</html>
