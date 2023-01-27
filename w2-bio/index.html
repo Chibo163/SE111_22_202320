@@ -10,16 +10,61 @@
     
     <title>Week 2 | Bio Page</title>
     <!--Josh Infantino | SE111.02 | 1/26/2023-->
+
+<style>
+    /*I tried to do some styling stuff while I had the time, it's pretty cool to scroll through the list of things and see what different options do*/
+    div{
+        border:1px solid black;
+        padding:10px;
+        margin:5px;
+    }
+
+    #header{
+        background-color: grey;
+    }    
+
+    #nav{
+        background-color: rgb(37, 34, 51);
+        text-align: center;
+    
+    }
+
+    #bio{
+        background-color: grey;
+        text-align: center;
+    }
+
+    #schooling{
+        background-color: grey;
+    }
+
+    #hobbies{
+        background-color: grey;
+    }
+
+    .center{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:50%
+    }
+
+    #footer{
+        background-color: rgb(37, 34, 51);
+    }
+
+</style>
+
 </head>
 <body>
     
-    <div id="#header">
-        <h1><em>Josh Infantino Bio Page</em></h1>
+    <div id="header">
+        <h1 id="#header"><em>Josh Infantino Bio Page</em></h1>
 
     </div><!--#header-->
 
 
-    <div id="#nav">
+    <div id="nav">
         
         <a href="#bio">| BIO |</a>
         <a href="#schooling">| SCHOOLING |</a>
@@ -29,40 +74,52 @@
     </div><!--#nav-->
 
     <hr>
-    <div id="#bio">
-        <h2>BIO - About Me</h2>
+    <div id="bio">
+        <h2><u>BIO - About Me</u></h2>
 
-        <p>About me content here lets go (needs one image)</p>
+        <p>My name is Josh- I like writing, watching shows, and playing <i>Dungeons and Dragons</i>! I'm currently enrolled at NEIT, which is the first in-person education I've had in seven years. Outside of school I work at <i>Market Basket Warwick</i> as an assistant manager (a very recent promotion). It's been fun learning how the store works and getting to know people who have similar interests- both in and outside of work. I am a big animal person and love spending time with my pets, <strong>Milo and Sadie</strong>.</p>
+        <img src="images/beast.jpg" alt="Picture of Milo in a good mood; we call him The Beast which is an appropriate nickname given how mischevious he is" style="width:300px">
+        <!--I didn't have any good pictures of Sadie unfortunately, maybe next time-->
+        <p>(This is Milo)</p>
 
     </div><!--#bio-->
 
     <hr>
-    <div id="#schooling">
-        <h2>SCHOOLING - Education is Awesome (Sometimes)</h2>
+    <div id="schooling">
+        <h2><u>SCHOOLING - Education is Awesome (sometimes)</u></h2>
 
         <ol>
-            <li>George J. Peters Elementry School</li>
-            <li><a href="https://www.pcci.edu">Abecka Academy</a></li>
-            <li>New England Institute of Technology</li>
+            <li><b>George J. Peters Elementary School</b></li>
+            <p>Ye old elementary school</p>
+            <li><b><a href="https://www.pcci.edu">Abecka Academy</a></b></li>
+            <p>The virtual learning program I used for middle and high school, above is a link to the Pensicola Christian Academy's website. The PCA is the physical location for Abecka</p>
+            <li><b>New England Institute of Technology</b></li>
+            <p>The grind never stops</p>
+            <!--for real-->
         </ol>
 
     </div><!--#schooling-->
 
     <hr>
-    <div id="#hobbies">
-        <h2>HOBBIES - Fun Stuff</h2>
+    <div id="hobbies">
+        <h2><u>HOBBIES - Fun Stuff</u></h2>
         
-        <!--need one image-->
+        <!--needs one image-->
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><b>Writing and Storytelling</b></li>
+            <p>I love writing, reading, and hearing about other peoples' stories! I'm almost always thinking about a character idea or a plot twist to incorporate somewhere</p>
+            <li><b>Dungeons and Dragons</b></li>
+            <p>One of my favorite table-top RPGs, D&D, is a blast to play for someone like me who loves telling stories and strange game rules equally</p>
+            <li><b>Hanging out with the Pets</b></li>
+            <p>Milo loves wrestling with us (I think he forgets that he's a lot smaller than we are) and Sadie loves her obnoxiously loud squeaky toys (seriously they're earpiercing), I try to play with them whenever I have a chance to</p>
+            <br>
+            <img src="images/11-tiamat.webp" alt="The angry dragon goddess, Tiamat" style="width:500px" class="center">
         </ul>
 
     </div><!--#hobbies-->
 
     <hr>
-    <div id="#footer">
+    <div id="footer">
         
         <a href="#header">Back to Top</a>
         <br>
