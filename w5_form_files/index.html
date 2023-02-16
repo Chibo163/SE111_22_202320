@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="J Infantino">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    
+    <h1>Birthday Party Registration Form</h1>
+
+    <form method="GET" action="confirm.html">
+        <table>
+            <thead>
+                <tr><!--First Row-->
+                    <td>
+                        <b>Labels</b>
+                    </td>
+
+                    <td>
+                        <b>Form Fields</b>
+                    </td>
+                </tr>
+            </thead>
+            
+            <tbody>
+
+                <tr> <!--Parent/Guardian Name-->
+
+                    <td>
+                        <label for="gfirst">Parent/Guardian Name</label>
+                    </td>
+
+                    <td>
+                        <input type="text" maxlength="20" name="gfirst" id="g-first" placeholder="First Name" required><!--first name-->
+                        <br>
+                        <input type="text" maxlength="20" name="glast" id="g-last" placeholder="Last Name" required><!--last name-->
+                    </td>
+
+                </tr>
+
+                <tr> <!--Child's First Name-->
+
+                    <td>
+                        <label for="cfirst">Child's First Name</label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="cfirst" id="c-first" placeholder="Child's First Name" required><!--first name-->
+                    </td>
+
+                </tr>
+
+                <tr> <!--Child's Age-->
+
+                    <td>
+                        <label for="age">Child's Age</label>
+                    </td>
+
+                    <td>
+                        <input type="number" name="age" value="3" required><!--age, starts at 3-->
+                    </td>
+
+                </tr>
+
+                <tr> <!--Date and Time Section Header-->
+
+                    <td>
+                        <h2>Date and Time</h2>
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                </tr>
+
+                <tr> <!--Date-->
+
+                    <td>
+                        <label for="date">Date</label>
+                    </td>
+
+                    <td>
+                        <input type="date" name="date" required><!--date-->
+                    </td>
+
+                </tr>
+
+                <tr> <!--Start Time-->
+
+                    <td>
+                        <label for="time">Start Time</label>
+                    </td>
+
+                    <td>
+                        <input type="time" name="time" required><!--time-->
+                    </td>
+
+                </tr>
+
+                <tr> <!--Number of Guests-->
+
+                    <td>
+                        <label for="guests">Number of Guests</label>
+                    </td>
+
+                    <td>
+                        <input type="number" name="guests" value="5"><!--guests-->
+                    </td>
+
+                </tr>
+
+                <tr> <!--Food Section Header-->
+
+                    <td>
+                        <h2>Food</h2>
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                </tr>
+
+                <tr> <!--Size-->
+
+                    <td>
+                        <label for="size">Size</label>
+                    </td>
+
+                    <td>
+                        <input type="radio" name="size" value="sm">sm
+                        <input type="radio" name="size" value="med">med
+                        <input type="radio" name="size" value="lg">lg <!--don't forget the text at the end, that's the 'visible label' part-->
+                    </td>
+
+                </tr>
+
+                <tr> <!--Drinks-->
+
+                    <td>
+                        <label for="drinks">Drinks</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox" name="drink1" checked="true" value="coke">Coke
+                        <br>
+                        <input type="checkbox" name="drink2" value="sprite">Sprite
+                        <br>
+                        <input type="checkbox" name="drink3" value="fruit punch">Fruit Punch
+                        <br>
+                        <input type="checkbox" name="drink4" value="lemonade">Lemonade
+                        <br>
+                        <input type="checkbox" name="drink5" value="iced tea">Iced Tea
+                    </td><!--drinks-->
+
+                </tr>
+
+                <tr> <!--Cake-->
+
+                    <td>
+                        <label for="cake">Cake</label>
+                    </td>
+
+                    <td>
+                        <select name="cake">
+                            <option>Chocolate</option>
+                            <option>Vanilla</option>
+                            <option>I'll bring my own</option>
+                        </select>
+                    </td><!--cake-->
+
+                </tr>
+
+                <tr> <!--Decorations Section Header-->
+
+                    <td>
+                        <h2>Decorations</h2>
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+
+</body>
+</html>
