@@ -17,31 +17,61 @@
    <!--each <input> must have an id that matches its corresponding label -->
    <!--each form element is separated by a break space (new line) --> 
     <form>
+        
         <table>
+            
             <tr>
+                
                 <td>
                     <label for="first">First Name: </label>
                 </td>
             
                 <td>
-                    <input type="text" id="first">
+                    <input type="text" name="first" id="first">
                 </td>
             </tr>
             
             <br>
 
-            <label for="last">Last Name: </label>
-            <input type="text" id="last">
+            <tr>
+                
+                <td>
+                    <label for="last">Last Name: </label>
+                </td>
+
+                <td>
+                    <input type="text" name="text" id="last">
+                </td>
+
+            </tr>
+            
+            <br>
+
+            <tr>
+                
+                <td>
+                    <label for="hours">Hours Worked: </label>
+                </td>
+            
+                <td>
+                    <input type="text" name="text" id="hours">
+                </td>
+            
+            </tr>
 
             <br>
 
-            <label for="hours">Hours Worked: </label>
-            <input type="text" id="hours">
+            <tr>
 
-            <br>
+                <td>
+                    <label for="rate">Hourly Rate: </label>
+                </td>
 
-            <label for="rate">Hourly Rate: </label>
-            <input type="text" id="rate">
+                <td>
+                    <input type="text" id="rate">
+                </td>
+
+            </tr>
 
             <br>
 
@@ -50,8 +80,17 @@
 
 
             <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-            <input type="button" id="enter-button" value="Enter">
+            <tr>
+                <td>
+                    <input type="button" id="enter-button" value="Enter">
+                </td>
+            
+                <td>
 
+                </td>
+            </tr>
+        </table>
+    </form>
             <br>
             <br>
 
