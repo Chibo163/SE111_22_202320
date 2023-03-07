@@ -23,7 +23,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><input id="button" type="button" value="submit"></td>
+				<td><input id="button" type="submit" value="submit" onclick="calcAndDisplay(e)"></td>
 			</tr>
 		</table>
 	<div>
@@ -39,9 +39,12 @@
 		
 
 		//Make an array to store the people
+		var people = []
 		
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
+		
+		//I did that (hopefully)
 		
 		
 		/*-----------------------------------------------------
@@ -67,14 +70,12 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-
-
+				first: `first`,
+				last: `last`,
 
             }//end of person object
 
-
-
-
+			people.push(person)
 			//Add the person object into the people array by using the .push() array method.
 			
 
@@ -93,13 +94,15 @@
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
+			console.log(people)
 			
 
 			//create a variable called 'output' that has an empty string value stored to 
+			var output = ``
 			
 
 			//Loop through the objects in the people array
-			for()
+			for(let index=0; index < people.length; index++)
             {
 
 				//Loop through each property in the object
