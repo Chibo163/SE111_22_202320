@@ -36,6 +36,9 @@
     <script>
 	
 		//Store the elements (tags) in variables
+		var fname = document.querySelector(`#first`)
+		var lname = document.querySelector(`#last`)
+		
 		document.querySelector(`#button`).addEventListener(`click`, calcAndDisplay)
 
 		//Make an array to store the people
@@ -72,8 +75,8 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first:`${first}`,
-				last:`${last}`,
+				first: fname.value,
+				last: lname.value,
 
             }//end of person object
 
@@ -107,26 +110,29 @@
 			for(let i = 0; i < people.length; i++)
             {
 
+				output += `<h3>FIRST: ${people[i].first}<br>LAST: ${people[i].last}</h3>`
 				//Loop through each property in the object
-				for(key in people[i])
+				for(let key in people[i])
                 {
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-				
+					//output += `<p>${key}: ${people[i][key]}</p>`.toUpperCase()					
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
+				output += `<hr>`
 				
 
 
 			}//end of loop going through people array to edit 'output'
 
 				//log the output string
+				console.log(output)
 				//replace the outputDiv's inner HTML with the output string
 				
-
+				document.querySelector(`#output`).innerHTML = output
 
 
 		}
