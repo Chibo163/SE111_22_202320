@@ -23,10 +23,10 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><input id="button" type="submit" value="submit" onclick="calcAndDisplay(e)"></td>
+				<td><input id="button" type="submit" value="submit"></td>
 			</tr>
 		</table>
-	<div>
+	</div>
 	<div id="output">
 	
 	</div>
@@ -36,10 +36,12 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		
+		document.querySelector(`#button`).addEventListener(`click`, calcAndDisplay)
 
 		//Make an array to store the people
-		var people = []
+		var people = [
+
+		]
 		
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
@@ -70,8 +72,8 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first: `first`,
-				last: `last`,
+				first:`${first}`,
+				last:`${last}`,
 
             }//end of person object
 
@@ -80,7 +82,7 @@
 			
 
 			//Bubble sort people on the last name
-			for(let i=0; i < people.length-1; i++)
+			for(let i = 0; i < people.length; i++)
 			{
 				for(let j=0; j < people.length-1; j++)
 				{
@@ -102,7 +104,7 @@
 			
 
 			//Loop through the objects in the people array
-			for(let index=0; index < people.length; index++)
+			for(let i = 0; i < people.length; i++)
             {
 
 				//Loop through each property in the object
